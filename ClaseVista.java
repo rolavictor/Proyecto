@@ -1,3 +1,4 @@
+import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -40,9 +41,9 @@ public class ClaseVista extends JFrame {
 
 	public ClaseVista() {
 		bloqueContenedor = getContentPane(); 
-		setTitle("Buscaminas Noruego!"); 
+		setTitle("Calculadora MVC"); 
 		setLayout(new FlowLayout()); 
-		setSize(300,300);
+		setSize(300,320);
 
 		a1 = new JButton("");
 		a2 = new JButton("");
@@ -98,33 +99,190 @@ public class ClaseVista extends JFrame {
 		bloqueContenedor.add(a25);
 
 		//set button size
-	    Dimension d = new Dimension(50,50);
-	    a1.setPreferredSize(d);
-	    a2.setPreferredSize(d);
-	    a3.setPreferredSize(d);
-	    a4.setPreferredSize(d);
-	    a5.setPreferredSize(d);
-	    a6.setPreferredSize(d);
-	    a7.setPreferredSize(d);
-	    a8.setPreferredSize(d);
-	    a9.setPreferredSize(d);
-	    a10.setPreferredSize(d);
-	    a11.setPreferredSize(d);
-	    a12.setPreferredSize(d);
-	    a13.setPreferredSize(d);
-	    a14.setPreferredSize(d);
-	    a15.setPreferredSize(d);
-	    a16.setPreferredSize(d);
-	    a17.setPreferredSize(d);
-	    a18.setPreferredSize(d);
-	    a19.setPreferredSize(d);
-	    a20.setPreferredSize(d);
-	    a21.setPreferredSize(d);
-	    a22.setPreferredSize(d);
-	    a23.setPreferredSize(d);
-	    a24.setPreferredSize(d);
-	    a25.setPreferredSize(d);
-		
+		Dimension d = new Dimension(50,50);
+		a1.setPreferredSize(d);
+		a2.setPreferredSize(d);
+		a3.setPreferredSize(d);
+		a4.setPreferredSize(d);
+		a5.setPreferredSize(d);
+		a6.setPreferredSize(d);
+		a7.setPreferredSize(d);
+		a8.setPreferredSize(d);
+		a9.setPreferredSize(d);
+		a10.setPreferredSize(d);
+		a11.setPreferredSize(d);
+		a12.setPreferredSize(d);
+		a13.setPreferredSize(d);
+		a14.setPreferredSize(d);
+		a15.setPreferredSize(d);
+		a16.setPreferredSize(d);
+		a17.setPreferredSize(d);
+		a18.setPreferredSize(d);
+		a19.setPreferredSize(d);
+		a20.setPreferredSize(d);
+		a21.setPreferredSize(d);
+		a22.setPreferredSize(d);
+		a23.setPreferredSize(d);
+		a24.setPreferredSize(d);
+		a25.setPreferredSize(d);
+
+
+		// cambia color del boton al clickar
+		a1.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a1.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+
+		a2.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a2.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a3.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a3.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a4.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a4.setBackground(java.awt.Color.red);
+			} 
+		}
+				);
+		a5.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a5.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a6.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a6.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a7.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a7.setBackground(java.awt.Color.red);
+			} 
+		}
+				);
+		a8.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a8.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a9.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a9.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a10.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a10.setBackground(java.awt.Color.red);
+			} 
+		}
+				);
+		a11.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a11.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a12.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a12.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a13.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a13.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a14.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a14.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a15.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a15.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a16.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a16.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+
+		a17.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a17.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a18.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a18.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a19.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a19.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a20.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a20.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a21.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a21.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a22.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a22.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a23.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a23.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a24.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a24.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+		a25.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				a25.setBackground(java.awt.Color.yellow);
+			} 
+		}
+				);
+
+
+
 		setVisible(true);
 	}
 }
