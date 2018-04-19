@@ -3,6 +3,7 @@ import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 
+import javax.swing.AbstractButton;
 import javax.swing.JButton; 
 import javax.swing.JFrame; 
 import javax.swing.JLabel; 
@@ -11,6 +12,7 @@ import javax.swing.JTextField;
 public class ClaseVista extends JFrame {
 
 	private static final long serialVersionUID = 1L;
+	int a=(int) ((3-0+1)*Math.random()+0);
 
 	Container bloqueContenedor = null; 
 	JButton a1 = null;
@@ -39,9 +41,11 @@ public class ClaseVista extends JFrame {
 	JButton a24 = null;
 	JButton a25 = null;
 
+	private Object be;
+
 	public ClaseVista() {
 		bloqueContenedor = getContentPane(); 
-		setTitle("Buscaminas Noruego!"); 
+		setTitle("Calculadora MVC"); 
 		setLayout(new FlowLayout()); 
 		setSize(300,320);
 
@@ -127,161 +131,190 @@ public class ClaseVista extends JFrame {
 		a25.setPreferredSize(d);
 
 
-		// cambia color del boton al clickar
+		a1.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a1.setText(""+a);
+			}
+		}
+				);
+		a2.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a2.setText(""+a);
+			}
+		}
+				);
+		a3.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a3.setText(""+a);
+			}
+		}
+				);
+		a4.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a4.setText(""+a);
+			}
+		}
+				);
+		a5.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a5.setText(""+a);
+			}
+		}
+				);
+		a6.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a6.setText(""+a);
+			}
+		}
+				);
+		a7.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a7.setText(""+a);
+			}
+		}
+				);
+		a8.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a8.setText(""+a);
+			}
+		}
+				);
+		a9.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a9.setText(""+a);
+			}
+		}
+				);
+		a10.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a10.setText(""+a);
+			}
+		}
+				);
+		a11.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a11.setText(""+a);
+			}
+		}
+				);
+		a12.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a12.setText(""+a);
+			}
+		}
+				);
+		a13.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a13.setText(""+a);
+				
+			}
+		}
+				);
+		a14.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a14.setText(""+a);
+			}
+		}
+				);
+		a15.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a15.setText(""+a);
+			}
+		}
+				);
+		a16.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a16.setText(""+a);
+			}
+		}
+				);
+		a17.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a17.setText(""+a);
+			}
+		}
+				);
+		a18.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a18.setText(""+a);
+			}
+		}
+				);
+		a19.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a19.setText(""+a);
+			}
+		}
+				);
+		a20.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a20.setText(""+a);
+			}
+		}
+				);
+		a21.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a21.setText(""+a);
+			}
+		}
+				);
+		a22.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a22.setText(""+a);
+			}
+		}
+				);
+		a23.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a23.setText(""+a);
+			}
+		}
+				);
+		a24.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a24.setText(""+a);
+			}
+		}
+				);
+		a25.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				a25.setText(""+a);
+			}
+		}
+				);
+		
+		/*cambia color del boton al clickar
 		a1.addMouseListener(new java.awt.event.MouseAdapter() { 
 			public void mouseClicked(java.awt.event.MouseEvent e) { 
 				a1.setBackground(java.awt.Color.yellow);
 			} 
 		}
-				);
-
-		a2.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a2.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a3.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a3.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a4.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a4.setBackground(java.awt.Color.red);
-			} 
-		}
-				);
-		a5.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a5.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a6.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a6.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a7.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a7.setBackground(java.awt.Color.red);
-			} 
-		}
-				);
-		a8.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a8.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a9.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a9.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a10.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a10.setBackground(java.awt.Color.red);
-			} 
-		}
-				);
-		a11.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a11.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a12.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a12.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a13.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a13.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a14.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a14.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a15.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a15.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a16.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a16.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-
-		a17.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a17.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a18.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a18.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a19.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a19.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a20.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a20.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a21.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a21.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a22.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a22.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a23.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a23.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a24.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a24.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-		a25.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a25.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);
-
-
+				);*/
 
 		setVisible(true);
 	}
