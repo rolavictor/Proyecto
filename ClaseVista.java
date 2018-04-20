@@ -10,8 +10,8 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class ClaseVista extends JFrame {
-	
-//creación de variables
+
+	//creación de variables
 	private static final long serialVersionUID = 1L;
 	int a=(int) ((3-0+1)*Math.random()+0);
 	int cont=0;
@@ -45,7 +45,7 @@ public class ClaseVista extends JFrame {
 
 	JLabel etiquetaResultado = null;
 	JTextField cajaDeTextoResulado = null;
-	
+
 	private Object be;
 
 	public ClaseVista() {
@@ -57,7 +57,7 @@ public class ClaseVista extends JFrame {
 		JTextField cajaDeTextoResultado = new JTextField("", 10); 
 		cajaDeTextoResultado.setEnabled(false);
 
-		
+
 		a1 = new JButton("");
 		a2 = new JButton("");
 		a3 = new JButton("");
@@ -111,7 +111,7 @@ public class ClaseVista extends JFrame {
 		bloqueContenedor.add(a22);
 		bloqueContenedor.add(a23);
 		bloqueContenedor.add(a24);
-	
+
 
 		//set button size
 		Dimension d = new Dimension(50,50);
@@ -140,178 +140,35 @@ public class ClaseVista extends JFrame {
 		a23.setPreferredSize(d);
 		a24.setPreferredSize(d);
 
+		a=1;
+		do{
+			bloque(a1);
+			bloque(a2);
+			bloque(a3);
+			bloque(a4);
+			bloque(a5);
+			bloque(a6);
+			bloque(a7);
+			bloque(a8);
+			bloque(a9);
+			bloque(a10);
+			bloque(a11);
+			bloque(a12);
+			bloque(a13);
+			bloque(a14);
+			bloque(a15);
+			bloque(a16);
+			bloque(a17);
+			bloque(a18);
+			bloque(a19);
+			bloque(a20);
+			bloque(a21);
+			bloque(a22);
+			bloque(a23);
+			bloque(a24);
+			
+		}while(a!=0);
 
-		a1.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a1.setText(""+a);
-			}
-		}
-				);
-		a2.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a2.setText(""+a);
-			}
-		}
-				);
-		a3.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a3.setText(""+a);
-			}
-		}
-				);
-		a4.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a4.setText(""+a);
-			}
-		}
-				);
-		a5.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a5.setText(""+a);
-			}
-		}
-				);
-		a6.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a6.setText(""+a);
-			}
-		}
-				);
-		a7.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a7.setText(""+a);
-			}
-		}
-				);
-		a8.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a8.setText(""+a);
-			}
-		}
-				);
-		a9.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a9.setText(""+a);
-			}
-		}
-				);
-		a10.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a10.setText(""+a);
-			}
-		}
-				);
-		a11.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a11.setText(""+a);
-			}
-		}
-				);
-		a12.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a12.setText(""+a);
-			}
-		}
-				);
-		a13.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a13.setText(""+a);
-				
-			}
-		}
-				);
-		a14.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a14.setText(""+a);
-			}
-		}
-				);
-		a15.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a15.setText(""+a);
-			}
-		}
-				);
-		a16.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a16.setText(""+a);
-			}
-		}
-				);
-		a17.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a17.setText(""+a);
-			}
-		}
-				);
-		a18.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a18.setText(""+a);
-			}
-		}
-				);
-		a19.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a19.setText(""+a);
-			}
-		}
-				);
-		a20.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a20.setText(""+a);
-			}
-		}
-				);
-		a21.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a21.setText(""+a);
-			}
-		}
-				);
-		a22.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a22.setText(""+a);
-			}
-		}
-				);
-		a23.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a23.setText(""+a);
-			}
-		}
-				);
-		a24.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				a24.setText(""+a);
-			}
-		}
-				);
-
-		
 		/*cambia color del boton al clickar
 		a1.addMouseListener(new java.awt.event.MouseAdapter() { 
 			public void mouseClicked(java.awt.event.MouseEvent e) { 
@@ -321,5 +178,14 @@ public class ClaseVista extends JFrame {
 				);*/
 
 		setVisible(true);
+	}
+	public static void bloque(JButton h){
+		h.addMouseListener(new java.awt.event.MouseAdapter() { 
+			public void mouseClicked(java.awt.event.MouseEvent e) { 
+				int a=(int) ((3-0+1)*Math.random()+0);
+				h.setText(""+h);
+			}
+		}
+				);
 	}
 }
