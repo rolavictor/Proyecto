@@ -57,7 +57,6 @@ public class ClaseVista extends JFrame {
 		JTextField cajaDeTextoResultado = new JTextField("", 10); 
 		cajaDeTextoResultado.setEnabled(false);
 
-
 		a1 = new JButton("");
 		a2 = new JButton("");
 		a3 = new JButton("");
@@ -140,8 +139,6 @@ public class ClaseVista extends JFrame {
 		a23.setPreferredSize(d);
 		a24.setPreferredSize(d);
 
-		a=1;
-		do{
 			bloque(a1);
 			bloque(a2);
 			bloque(a3);
@@ -167,7 +164,7 @@ public class ClaseVista extends JFrame {
 			bloque(a23);
 			bloque(a24);
 			
-		}while(a!=0);
+
 
 		/*cambia color del boton al clickar
 		a1.addMouseListener(new java.awt.event.MouseAdapter() { 
@@ -179,13 +176,15 @@ public class ClaseVista extends JFrame {
 
 		setVisible(true);
 	}
+
 	public static void bloque(JButton h){
 		h.addMouseListener(new java.awt.event.MouseAdapter() { 
 			public void mouseClicked(java.awt.event.MouseEvent e) { 
 				int a=(int) ((3-0+1)*Math.random()+0);
-				h.setText(""+h);
+				h.setText(""+a);
 			}
 		}
 				);
 	}
+
 }
