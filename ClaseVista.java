@@ -6,7 +6,8 @@ import java.awt.FlowLayout;
 import javax.swing.AbstractButton;
 import javax.swing.JButton; 
 import javax.swing.JFrame; 
-import javax.swing.JLabel; 
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class ClaseVista extends JFrame {
@@ -139,6 +140,7 @@ public class ClaseVista extends JFrame {
 		a23.setPreferredSize(d);
 		a24.setPreferredSize(d);
 
+
 			bloque(a1);
 			bloque(a2);
 			bloque(a3);
@@ -163,8 +165,6 @@ public class ClaseVista extends JFrame {
 			bloque(a22);
 			bloque(a23);
 			bloque(a24);
-			
-
 
 		/*cambia color del boton al clickar
 		a1.addMouseListener(new java.awt.event.MouseAdapter() { 
@@ -182,6 +182,11 @@ public class ClaseVista extends JFrame {
 			public void mouseClicked(java.awt.event.MouseEvent e) { 
 				int a=(int) ((3-0+1)*Math.random()+0);
 				h.setText(""+a);
+				if(a==0) {
+					//si responde si, seguir jugando. si pone otra cosa que acabe el programa
+					JOptionPane.showInputDialog("Has perdido. ¿Quieres continuar?");
+				}
+
 			}
 		}
 				);
