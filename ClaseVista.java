@@ -43,11 +43,8 @@ public class ClaseVista extends JFrame {
 	JButton a22 = null;
 	JButton a23 = null;
 	JButton a24 = null;
-
 	JLabel etiquetaResultado = null;
 	JTextField cajaDeTextoResulado = null;
-
-	private Object be;
 
 	public ClaseVista() {
 		bloqueContenedor = getContentPane(); 
@@ -82,7 +79,7 @@ public class ClaseVista extends JFrame {
 		a22 = new JButton("");
 		a23 = new JButton("");
 		a24 = new JButton("");
-
+		
 		bloqueContenedor.add(etiquetaResultado); 
 		bloqueContenedor.add(cajaDeTextoResultado);
 
@@ -141,30 +138,7 @@ public class ClaseVista extends JFrame {
 		a24.setPreferredSize(d);
 
 
-		bloque(a1);
-		bloque(a2);
-		bloque(a3);
-		bloque(a4);
-		bloque(a5);
-		bloque(a6);
-		bloque(a7);
-		bloque(a8);
-		bloque(a9);
-		bloque(a10);
-		bloque(a11);
-		bloque(a12);
-		bloque(a13);
-		bloque(a14);
-		bloque(a15);
-		bloque(a16);
-		bloque(a17);
-		bloque(a18);
-		bloque(a19);
-		bloque(a20);
-		bloque(a21);
-		bloque(a22);
-		bloque(a23);
-		bloque(a24);
+
 
 		/*cambia color del boton al clickar
 		a1.addMouseListener(new java.awt.event.MouseAdapter() { 
@@ -176,26 +150,4 @@ public class ClaseVista extends JFrame {
 
 		setVisible(true);
 	}
-
-	public static void bloque(JButton h){
-		h.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				int a=(int) ((3-0+1)*Math.random()+0);
-				h.setText(""+a);
-				if(a==0) {
-					//si responde si, seguir jugando. si pone otra cosa que acabe el programa
-					int dialogButton = JOptionPane.YES_NO_OPTION;
-		            JOptionPane.showConfirmDialog (null, "Has perdido","WARNING", dialogButton);
-		            if(dialogButton == JOptionPane.YES_OPTION) {
-		                System.exit(0);
-		            if(dialogButton == JOptionPane.NO_OPTION) {
-		                  System.out.println("terminado");
-		                }
-		              }
-				}
-			}
-		}
-				);
-	}
-
 }
