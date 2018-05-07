@@ -48,7 +48,7 @@ public class ClaseVista extends JFrame {
 
 	public ClaseVista() {
 		bloqueContenedor = getContentPane(); 
-		setTitle("Calculadora MVC"); 
+		setTitle("Buscaminas Noruego!"); 
 		setLayout(new FlowLayout()); 
 		setSize(240,410);
 		etiquetaResultado = new JLabel("Contador "); 
