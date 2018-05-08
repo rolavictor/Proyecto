@@ -1,4 +1,3 @@
-
 public class ClasePrincipal {
 	
 	public static void main(String args[]) {
@@ -8,5 +7,3 @@ public class ClasePrincipal {
 		 new ClaseControlador(vista, modelo); 
 		 } 
 	}
-
-  
