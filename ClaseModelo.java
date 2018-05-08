@@ -7,9 +7,11 @@ public class ClaseModelo {
 		h.addMouseListener(new java.awt.event.MouseAdapter() { 
 			public void mouseClicked(java.awt.event.MouseEvent e) { 
 				int a=(int) ((3-0+1)*Math.random()+0);
-				h.setText(""+a);
+				if(a!=0){
+					h.setBackground(java.awt.Color.yellow);
+				}
 				if(a==0) {
-					//si responde si, seguir jugando. si pone otra cosa que acabe el programa
+					h.setBackground(java.awt.Color.red);
 					int dialogButton = JOptionPane.YES_NO_OPTION;
 					JOptionPane.showMessageDialog(null, "Has perdido");
 		            System.exit(0);
@@ -20,4 +22,3 @@ public class ClaseModelo {
 				);
 	}
 }
-	
