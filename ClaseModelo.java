@@ -13,7 +13,6 @@ public class ClaseModelo {
 				}
 				if(a==0) {
 					h.setBackground(java.awt.Color.red);
-					int dialogButton = JOptionPane.YES_NO_OPTION;
 					JOptionPane.showMessageDialog(null, "Has perdido");
 		            System.exit(0);
 		          
