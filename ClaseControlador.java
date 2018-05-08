@@ -104,7 +104,3 @@ public class ClaseControlador implements ActionListener {
 		objVista.a24.addActionListener(escuchador);
 	}
 }
-
-
-
-
