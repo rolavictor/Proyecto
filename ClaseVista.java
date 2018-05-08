@@ -48,7 +48,7 @@ public class ClaseVista extends JFrame {
 
 	public ClaseVista() {
 		bloqueContenedor = getContentPane(); 
-		setTitle("Buscaminas Noruego!"); 
+		setTitle("Calculadora MVC"); 
 		setLayout(new FlowLayout()); 
 		setSize(240,410);
 		etiquetaResultado = new JLabel("Contador "); 
@@ -136,9 +136,6 @@ public class ClaseVista extends JFrame {
 		a22.setPreferredSize(d);
 		a23.setPreferredSize(d);
 		a24.setPreferredSize(d);
-
-
-
 
 		/*cambia color del boton al clickar
 		a1.addMouseListener(new java.awt.event.MouseAdapter() { 
