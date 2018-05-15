@@ -44,16 +44,13 @@ public class ClaseVista extends JFrame {
 	JButton a23 = null;
 	JButton a24 = null;
 	JLabel etiquetaResultado = null;
-	JTextField cajaDeTextoResulado = null;
 
 	public ClaseVista() {
 		bloqueContenedor = getContentPane(); 
-		setTitle("Calculadora MVC"); 
+		setTitle("BUSCAMINAS"); 
 		setLayout(new FlowLayout()); 
 		setSize(240,410);
-		etiquetaResultado = new JLabel("Contador "); 
-		JTextField cajaDeTextoResultado = new JTextField("", 10); 
-		cajaDeTextoResultado.setEnabled(false);
+		etiquetaResultado = new JLabel("                      BUSCAMINAS                     "); 
 
 		a1 = new JButton("");
 		a2 = new JButton("");
@@ -81,8 +78,6 @@ public class ClaseVista extends JFrame {
 		a24 = new JButton("");
 		
 		bloqueContenedor.add(etiquetaResultado); 
-		bloqueContenedor.add(cajaDeTextoResultado);
-
 
 		bloqueContenedor.add(a1);
 		bloqueContenedor.add(a2);
