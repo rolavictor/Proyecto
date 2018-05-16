@@ -10,10 +10,11 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
+import com.sun.glass.events.WindowEvent;
+
 public class ClaseVista extends JFrame {
 
 	//creación de variables
-	private static final long serialVersionUID = 1L;
 	int a=(int) ((3-0+1)*Math.random()+0);
 	int cont=0;
 
@@ -142,4 +143,5 @@ public class ClaseVista extends JFrame {
 
 		setVisible(true);
 	}
+
 }
