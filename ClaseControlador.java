@@ -15,12 +15,9 @@ public class ClaseControlador implements ActionListener {
 		actionListener(this); // Escuchador para el botón 
 	}
 
-
-
 	@Override
 	public void actionPerformed(ActionEvent objEvento) { 
-
-
+		
 		// Capturamos los números desde la vista 
 		JButton a1 = this.objVista.a1; 
 		JButton a2 = this.objVista.a2;
@@ -47,7 +44,6 @@ public class ClaseControlador implements ActionListener {
 		JButton a23= this.objVista.a23;
 		JButton a24 = this.objVista.a24;
 
-
 		objModelo.bloque(a1);
 		objModelo.bloque(a2);
 		objModelo.bloque(a3);
@@ -72,9 +68,6 @@ public class ClaseControlador implements ActionListener {
 		objModelo.bloque(a22);
 		objModelo.bloque(a23);
 		objModelo.bloque(a24);
-		
-		// Mostramos el resultado en la vista (GUI) 
-
 
 	}
 	public void actionListener(ActionListener escuchador) {
