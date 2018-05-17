@@ -1,24 +1,26 @@
 import java.awt.event.ActionEvent; 
 import java.awt.event.ActionListener;
-
-import javax.swing.AbstractButton;
 import javax.swing.JButton;
 
 public class ClaseControlador implements ActionListener {
 
 	ClaseModelo objModelo = null;
 	ClaseVista objVista = null;
-
+	/**
+	 * @param objVista
+	 * @param objModelo
+	 */
 	public ClaseControlador(ClaseVista objVista, ClaseModelo objModelo) { 
 		this.objModelo = objModelo; 
 		this.objVista = objVista; 
 		actionListener(this); // Escuchador para el botón 
 	}
-
-	@Override
+/**
+ * Los botones se activarán al clickarlos
+ * @param objEvento
+ */
 	public void actionPerformed(ActionEvent objEvento) { 
-		
-		// Capturamos los números desde la vista 
+//Llama a los botones de la clase vista
 		JButton a1 = this.objVista.a1; 
 		JButton a2 = this.objVista.a2;
 		JButton a3 = this.objVista.a3;
@@ -44,6 +46,7 @@ public class ClaseControlador implements ActionListener {
 		JButton a23= this.objVista.a23;
 		JButton a24 = this.objVista.a24;
 
+		//Llama al método de la clase Modelo
 		objModelo.bloque(a1);
 		objModelo.bloque(a2);
 		objModelo.bloque(a3);
@@ -70,6 +73,10 @@ public class ClaseControlador implements ActionListener {
 		objModelo.bloque(a24);
 
 	}
+	/**
+	 * Activar el botón cuando lo llama con el parámetro
+	 * @param escuchador
+	 */
 	public void actionListener(ActionListener escuchador) {
 		objVista.a1.addActionListener(escuchador);
 		objVista.a2.addActionListener(escuchador);
