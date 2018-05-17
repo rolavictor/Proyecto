@@ -1,19 +1,20 @@
-import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 
-import javax.swing.AbstractButton;
 import javax.swing.JButton; 
 import javax.swing.JFrame; 
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JTextField;
 
-import com.sun.glass.events.WindowEvent;
-
+/**
+ * @author Noruega
+ */
 public class ClaseVista extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	//creación de variables
 	int a=(int) ((3-0+1)*Math.random()+0);
 	int cont=0;
@@ -77,7 +78,7 @@ public class ClaseVista extends JFrame {
 		a22 = new JButton("");
 		a23 = new JButton("");
 		a24 = new JButton("");
-		
+
 		bloqueContenedor.add(etiquetaResultado); 
 
 		bloqueContenedor.add(a1);
@@ -106,7 +107,7 @@ public class ClaseVista extends JFrame {
 		bloqueContenedor.add(a24);
 
 
-		//set button size
+		//Ajusta el tamaño de los botones
 		Dimension d = new Dimension(50,50);
 		a1.setPreferredSize(d);
 		a2.setPreferredSize(d);
@@ -132,14 +133,6 @@ public class ClaseVista extends JFrame {
 		a22.setPreferredSize(d);
 		a23.setPreferredSize(d);
 		a24.setPreferredSize(d);
-
-		/*cambia color del boton al clickar
-		a1.addMouseListener(new java.awt.event.MouseAdapter() { 
-			public void mouseClicked(java.awt.event.MouseEvent e) { 
-				a1.setBackground(java.awt.Color.yellow);
-			} 
-		}
-				);*/
 
 		setVisible(true);
 	}
